@@ -8,5 +8,4 @@ void successScreen() {
   textSize(45);
   text("RETURN", 120, 345);
   textSize(30);
-  text("What a big fish!!", 110, 200);
-}
+  text("What a big fish!!", 110, 200);}

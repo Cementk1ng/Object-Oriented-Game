@@ -8,5 +8,4 @@ void failScreen() {
   textSize(45);
   text("RETURN", 120, 345);
   textSize(30);
-  text("YOU ARE FAIL!!!", 110, 200);
-}
+  text("YOU ARE FAIL!!!", 110, 200);}
