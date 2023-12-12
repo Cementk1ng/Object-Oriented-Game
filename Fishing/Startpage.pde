@@ -11,8 +11,8 @@ void startScreen() {
   text("RULE", 10, 50);
   textSize(20);
   text("press[left]/[right]to control the length of rod.", 10, 150);
-  text("press[up]/[down]Raising and lowering the bait.", 10, 100);
+  text("press[up]/[down]raising and lowering the bait.", 10, 100);
   fill(#437e82);
   textSize(100);
-  text("FISHING", 30, 275);
+  text("FISHING", 30, 275);//title
 }

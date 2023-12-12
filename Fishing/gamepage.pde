@@ -1,7 +1,5 @@
 void gameScreen() {
   backGround();
-  //fishX=random(210, 380);
-  //fishY=random(210, 380);
   // draw array
   Rain();
   //display array from rain class
@@ -22,6 +20,7 @@ void backGround() {
   fill(83, 112, 50, 140);
   ellipseMode(CENTER);
   noStroke();
+  //Draw fog and make it dynamic
   ellipse(10, 190, 110+10*sin(frameCount*.05), 110+10*sin(frameCount*.05));
   ellipse(190, 130, 200+10*sin(frameCount*.05), 200+10*sin(frameCount*.05));
   ellipse(350, 50, 200+10*sin(frameCount*.05), 200+10*sin(frameCount*.05));
@@ -169,10 +168,10 @@ void Rain() {
   }
 
   if ((roddown <= fishY+20 && roddown >= fishY-20 ) && (rodlengthX <= fishX+70 && rodlengthX >= fishX-20) ) {
-    print ("get it");
+    print ("get it");//testing
     state=GameState.SUCCESS;
   } else if ( (rodlengthX <= minePosition.x+28 && rodlengthX >= minePosition.x-28 ) && (roddown <= minePosition.y+20 && roddown >= minePosition.y-10) ) {
-    print ("opps");
+    print ("opps");//testing
     state=GameState.FAIL;
   }
 }

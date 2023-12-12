@@ -1,7 +1,5 @@
 //define class rain
 class rain {
-
- 
   //state position value and position of rain
   PVector position;
   float mousePositionX, mousePositionY;
